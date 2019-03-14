@@ -137,3 +137,17 @@ margin-left: 50px;
 
 shorthand for padding & margin
 margin: 10px 30px 20px 50px; */
+
+
+
+@media screen and (min-width: 40em) {
+  .all-products {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 70em) {
+  .all-products {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
