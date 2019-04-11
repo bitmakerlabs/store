@@ -8,3 +8,5 @@ var elHambBtn = document.querySelector('.hamburger');
 elHambBtn.addEventListener('click', function(e) {
   elMainMenu.classList.toggle('close');
 });
+
+// Some other next steps...
