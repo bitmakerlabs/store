@@ -6,11 +6,17 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Nike Webstore</title>
+
   </head>
   <body>
     <nav class="nav">
       <div class="logo"><img src="images/logo.svg" alt="Nike Logo"></div>
-      <ul class="nav-list">
+      <button type="button" name="hamburger" class="btn hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+      <ul class="nav-list close" id="mainmenu">
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
         </li>
@@ -86,5 +92,8 @@
     <footer>
       Made with love in Toronto
     </footer>
+
+
+    <script src="scripts/index.js" charset="utf-8"></script>
   </body>
 </html>

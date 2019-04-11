@@ -33,26 +33,67 @@ img {
   height: 1em;
 }
 
+.btn {
+  font-size: 1em;
+  background-color: transparent;
+  border: 1px solid white;
+  width: 2em;
+  height: 2em;
+  border-radius: 0.5em;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.hamburger {
+  position: absolute;
+  top: 0.75em;
+  right: 1em;
+}
+
 .nav-list {
   color: white;
   list-style: none;
   padding: 0;
-  display: none;
+  /* display: none; */
 }
+
+
 
 .nav-item {
   border-top: 1px solid #333;
+  height: 3em;
 }
 
 .nav-link {
   display: inline-block;
   margin: 1rem 0;
+  height: 1em;
+  line-height: 1;
   color: white;
   text-decoration: none;
 }
   .nav-link:hover {
     text-decoration: underline;
   }
+
+  .nav-link, .nav-item, .nav-list {
+    transition: all 0.4s linear;
+  }
+  .close .nav-link {
+    margin: 0;
+    opacity: 0;
+  }
+  .close .nav-item {
+    border-width: 0;
+    margin: 0;
+    height: 0;
+  }
+  .close.nav-list {
+    margin: 0;
+  }
+
 
 .hero {
   height: 25vh;
