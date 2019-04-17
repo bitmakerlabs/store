@@ -36,10 +36,10 @@ img {
 .btn {
   font-size: 1em;
   background-color: transparent;
-  border: 1px solid white;
+  border: 2px solid white;
   width: 2em;
   height: 2em;
-  border-radius: 0.5em;
+  border-radius: 0.25em;
 }
 .btn:hover {
   cursor: pointer;
@@ -50,6 +50,15 @@ img {
   position: absolute;
   top: 0.75em;
   right: 1em;
+  padding: 0.2em;
+}
+.hamburger div {
+  height: 2px;
+  background-color: white;
+  margin: 0.25em 0;
+}
+.hamburger:hover div {
+  background-color: black;
 }
 
 .nav-list {
@@ -79,7 +88,7 @@ img {
   }
 
   .nav-link, .nav-item, .nav-list {
-    transition: all 0.4s linear;
+    transition: all 0.2s linear;
   }
   .close .nav-link {
     margin: 0;
